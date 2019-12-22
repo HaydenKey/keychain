@@ -204,14 +204,6 @@ def mine():
     }
     return jsonify(response), 200
 
-@app.route('/floof', methods=['GET'])
-def floof():
-    response = {
-        'floofed': 'ya floofed.'
-    }
-    return jsonify(response), 200
-
-
 @app.route('/transactions/new', methods=['POST'])
 def new_transaction():
 
